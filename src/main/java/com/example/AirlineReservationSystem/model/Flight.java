@@ -6,11 +6,12 @@ import lombok.Data;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 */
+import java.util.UUID;
 import java.util.Date;
 
 @Data
 public class Flight {
-    private int flightNumber;
+    private UUID flightNumber;
     private String AirlineId;
     private double flightPrice;
     private String flightFrom;

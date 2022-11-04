@@ -8,10 +8,11 @@ import java.sql.SQLException;
 */
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.UUID;
 
 @Data
 public class Customer implements User {
-    private int userId;
+    private UUID userId;
     private String firstName;
     private String lastName;
     private String email;

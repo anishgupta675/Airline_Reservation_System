@@ -1,7 +1,9 @@
 package com.example.AirlineReservationSystem.controller;
 
-public class FlightSearchFormData {
-    private long flightId;
+import java.util.UUID;
 
-    public long getFlightId() { return this.flightId; }
+public class FlightSearchFormData {
+    private UUID flightId;
+
+    public UUID getFlightId() { return this.flightId; }
 }

@@ -7,11 +7,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 */
 import java.util.Date;
+import java.util.UUID;
 
 @Data
 public class Ticket {
-    private String ticket_id;
-    private int passenger_id;
+    private UUID ticket_id;
+    private UUID passenger_id;
     private int flight_number;
 
     private Date purchase_date;
