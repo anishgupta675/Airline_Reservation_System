@@ -28,7 +28,7 @@ public class Customer implements User {
 
     /*
     public Customer(ResultSet DataSet) throws SQLException {
-        this.userId = DataSet.getInt("passenger_id");
+        this.userId = UUID.randomUUID();
         this.firstName = DataSet.getString("passenger_first_name");
         this.email = DataSet.getString("passenger_email");
         this.lastName = DataSet.getString("passenger_last_name");
@@ -42,7 +42,7 @@ public class Customer implements User {
         this.updatedAt = DataSet.getDate("updatedAt");
     }
     public Customer() {
-        this.userId = 0;
+        this.userId = UUID.randomUUID();
         this.firstName = null;
         this.email = null;
         this.lastName = null;
