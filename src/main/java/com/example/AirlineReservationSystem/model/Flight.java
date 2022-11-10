@@ -40,4 +40,8 @@ public class Flight {
         this.flightFrom = " ";
     }
     */
+
+    public Flight priceComparator(Flight flight) {
+        return (this.flightPrice < flight.getFlightPrice()) ? this : flight;
+    }
 }
