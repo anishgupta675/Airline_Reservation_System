@@ -8,6 +8,7 @@ import java.sql.SQLException;
 */
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Set;
 import java.util.UUID;
 
 @Data
@@ -25,6 +26,7 @@ public class Customer implements User {
     private Date updatedAt;
     private String passportNumber;
     private ArrayList<Flight> Flights;
+    private Set<Invoice> invoices;
 
     /*
     public Customer(ResultSet DataSet) throws SQLException {
