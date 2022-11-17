@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.UUID;
 
 @Repository
-public interface FlightRepository extends JpaRepository<Flight, UUID> {
-    List<Flight> findFlightByInformation(Collection<UUID> flightId);
+public interface FlightRepository extends JpaRepository<Flight<Collection<E>>, UUID> {
+    List<Flight<Collection<E>>> findFlightByInformation(Collection<UUID> flightId);
 
-    List<Flight> priceComparator(Collection<UUID> flightId);
+    List<Flight<Collection<E>>> priceComparator(Collection<UUID> flightId);
 }

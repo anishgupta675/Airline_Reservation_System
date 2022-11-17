@@ -6,11 +6,12 @@ import lombok.Data;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 */
+import java.util.Collection;
 import java.util.UUID;
 import java.util.Date;
 
 @Data
-public class Flight {
+public class Flight<L extends Collection<E>> {
     private UUID flightNumber;
     private String AirlineId;
     private double flightPrice;
@@ -41,7 +42,7 @@ public class Flight {
     }
     */
 
-    public Flight priceComparator(Flight flight) {
+    public Flight<Collection<E>> priceComparator(Flight<Collection<E>> flight) {
         return (this.flightPrice < flight.getFlightPrice()) ? this : flight;
     }
 }

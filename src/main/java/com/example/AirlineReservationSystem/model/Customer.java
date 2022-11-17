@@ -6,10 +6,7 @@ import lombok.Data;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 */
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 @Data
 public class Customer implements User {
@@ -25,7 +22,7 @@ public class Customer implements User {
     private final Date createdAt;
     private Date updatedAt;
     private String passportNumber;
-    private ArrayList<Flight> Flights;
+    private ArrayList<Flight<Collection<E>>> Flights;
     private Set<Invoice> invoices;
 
     /*
